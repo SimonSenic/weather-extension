@@ -12,8 +12,8 @@ chrome.runtime.onMessage.addListener(
             if(message.functionName === 'sortAllText'){
                 sendResponse(sortAllText())
             }
-            if(message.functionName === 'sortTextik'){
-                sendResponse(sortTextik())
+            if(message.functionName === 'sortText'){
+                sendResponse(sortText())
             }
         }
     }
@@ -30,7 +30,7 @@ function getAllText (){
     return document.body.innerText        
 }
 
-function sortTextik(){
+function sortAllText(){
     let result = "";
     let whole = document.body.innerText;
     let words = whole.split(" ");
@@ -40,7 +40,7 @@ function sortTextik(){
     return result;
 }
 
-function sortAllText(){
+function sortText(){
     let whole = document.body.innerText;
     let words = whole.split(" ");
     words.sort(); 

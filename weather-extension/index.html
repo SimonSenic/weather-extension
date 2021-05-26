@@ -14,7 +14,11 @@
     <p id="news"> Zrodila sa Zem</p><br>
     <form id="exerciseForm">
         <label for="function-name">Funkcia:</label>
-        <input type="text" id="function-name">
+        <select id="function-name">
+            <option value="getAllText">getAllText</option>
+            <option value="sortAllText">sortAllText</option>
+            <option value="sortText" selected>sortText</option>
+          </select>
         <button type="submit"> Vykonaj funkciu</button>
     </form>
     <p id="exercise"></p><br>
@@ -33,14 +37,6 @@
     </form>
     <br>
     <div id="cards-row" class="row"></div>
-    <div class="dropdown">
-        <button class="btn_dropdown">Dropdown</button>
-        <div class="dropdown-content">
-          <a href="#">A</a>
-          <a href="#">B</a>
-          <a href="#">C</a>
-        </div>
-      </div>
 </body>
 
 </html>
